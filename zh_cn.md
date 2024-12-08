@@ -1,6 +1,8 @@
 # Mc-Router
 一个基于域名的 Minecraft 反向代理。
 
+本项目基于 https://github.com/JavaDerg/mc-router 发布，其许可遵循 GPL-3 许可证。
+
 ## 什么是 Mc-Router
 如果你有多个 Minecraft 服务器在运行，但只有有限数量的端口，这个工具适合你。
 Mc-Router 允许你在单个端口上监听，并为多个本地 Minecraft 服务器进行代理，具体根据连接时使用的域名进行转发。
@@ -34,3 +36,10 @@ Mc-Router 允许你在单个端口上监听，并为多个本地 Minecraft 服�
 
 #### 注意事项：
 - 配置会自动热加载，无需重启服务器，重启会导致所有当前用户断开连接。
+
+## 更改记录
+
+- 支持了mc高版本运行（大概）
+- 支持了ipv6
+- 支持了默认转发
+- 修改了 README

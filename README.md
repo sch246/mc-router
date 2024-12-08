@@ -1,6 +1,8 @@
 # Mc-Router
 A Minecraft reverse proxy based on domains.
 
+This project is based on https://github.com/JavaDerg/mc-router and its license follows the GPL-3 license.
+
 ## Language
 
 [简体中文](./zh_cn.md)
@@ -43,3 +45,10 @@ Was to lazy to set up proper DNS records that allow Minecraft to figure out the 
 
 #### Notes:
 - The config is automatically hot reloaded, no need to restart the server, doing so would force all current users to lose connection.
+
+## Change Log
+
+- Supported running on higher versions of Minecraft (approximately)
+- Added support for IPv6
+- Added support for default forwarding
+- Modified the README
