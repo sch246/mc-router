@@ -1,6 +1,9 @@
 # Mc-Router
 A Minecraft reverse proxy based on domains.
 
+## Language
+
+[简体中文](./zh_cn.md)
 
 ## What
 If you have multiple Minecraft servers running but only a limited number of ports this is for you.
@@ -25,8 +28,18 @@ Was to lazy to set up proper DNS records that allow Minecraft to figure out the 
    The server will try to obtain the config path from your environment variables, specifically `MCR_CONFIG`. (Default is `./mcr.json`)
    
    Additionally, you can provide the interface/port the server should listen on with `MCR_INTERFACE`. (Default is `0.0.0.0:25565`)
+
+   Set this environment variable to switch to IPv6: `USE_IPV6=true` (Default is `false`)
+
+   Set this environment variable to enable log printing: `RUST_LOG=info` (Default is not to print anything)
+
 2. Run the server
 
+   For example, you can run it like this:
+
+   ```sh
+   USE_IPV6=true RUST_LOG=info ./mc-router
+   ```
 
 #### Notes:
 - The config is automatically hot reloaded, no need to restart the server, doing so would force all current users to lose connection.
